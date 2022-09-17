@@ -3,12 +3,17 @@ essential styles:
 these make the slideshow work
 */
 
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .slides {
   position: relative;
   height: 150px;
   padding: 0px;
   margin: 0px;
   list-style-type: none;
+  margin-bottom: 1em;
 }
 
 .slide {
@@ -58,4 +63,29 @@ just for appearance; change whatever you want
 
 .slide:nth-of-type(5) {
   background: purple;
+}
+
+.indicators,
+.controls {
+  display: flex;
+  gap: 1em;
+  margin-bottom: 1em;
+}
+
+.indicator,
+.control {
+  display: block;
+  padding: 1em 2em;
+  background-color: #eeeeee;
+  cursor: pointer;
+  user-select: none;
+  min-width: 80px;
+  text-align: center;
+}
+.control:hover {
+  background-color: #cccccc;
+}
+
+.indicator.active {
+  background-color: tomato;
 }
