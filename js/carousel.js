@@ -21,18 +21,21 @@ class Carousel {
     this.CODE_LEFT_ARROW = "ArrowLeft";
     this.CODE_RIGHT_ARROW = "ArrowRight";
     this.CODE_SPACE = "Space";
-    this.PLAY = 'Play';
-    this.PAUSE = 'Pause';
+    this.FA_PLAY = '<i class="far fa-play-circle"></i>';
+    this.FA_PAUSE = '<i class="far fa-pause-circle"></i>';
+    this.FA_PREV = '<i class="fas fa-angle-left"></i>';
+    this.FA_NEXT = '<i class="fas fa-angle-right"></i>';
+
     this.currentSlide = 0;
   }
 
   _initControls() {
     const controls = document.createElement("div");
-    const PREV = '<span class="control control-prev" id="prev">Previous</span>';
+    const PREV = `<span class="control control-prev" id="prev">${this.FA_PREV}</span>`;
     const PAUSE = `<span class="control control-pause" id="pause">
-                          ${this.isPlaying ? this.PAUSE : this.PLAY}    
+                          ${this.isPlaying ? this.FA_PAUSE : this.FA_PLAY}    
                           </span>`;
-    const NEXT = '<span class="control control-next" id="next">Next</span>';
+    const NEXT = `<span class="control control-next" id="next">${this.FA_NEXT}</span>`;
 
     controls.setAttribute("class", "controls");
     controls.innerHTML = PREV + PAUSE + NEXT;
@@ -91,12 +94,12 @@ class Carousel {
   _pause() {
     this.isPlaying = false;
     clearInterval(this.timerId);
-    this.pauseBtn.innerHTML = "Play";
+    this.pauseBtn.innerHTML = this.FA_PLAY;
   }
 
   _play() {
     this.isPlaying = true;
-    this.pauseBtn.innerHTML = "Pause";
+    this.pauseBtn.innerHTML = this.FA_PAUSE;
     this._tick();
   }
 
