@@ -69,8 +69,6 @@ body {
   margin-bottom: 20px;
 }
 
-
-
 .slides {
   position: relative;
   height: 600px;
@@ -81,6 +79,9 @@ body {
   list-style-type: none;
 
 }
+.slides:hover {
+    cursor: pointer;
+  }
 
 .slide {
   position: absolute;
@@ -147,6 +148,12 @@ just for appearance; change whatever you want
 .footer {
   min-height: 100px;
   padding: 20px 0;
+}
+.footer-message {
+color: brown;
+font-size: 15px;
+  font-style: italic;
+  text-align: center;
 }
 
 .footer-link {
