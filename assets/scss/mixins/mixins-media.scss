@@ -1,5 +1,3 @@
-@use "../presets" as *;
-
 @mixin ul-min {
   @media (min-width: $ul) {
     @content;

@@ -1,0 +1,11 @@
+@import "../../libs/normalize.css/normalize";
+
+@import "../scss/presets/variables";
+@import "../scss/presets/skin";
+@import "../scss/mixins/mixins-media";
+
+@import "../scss/components/common";
+
+@import "../scss/components/header";
+@import "../scss/components/carousel";
+@import "../scss/components/footer";
