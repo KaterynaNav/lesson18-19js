@@ -1,5 +1,5 @@
 import SwipeCarousel from "./carousel-swipe.js";
-import Carousel from "./carousel-swipe.js";
+import Carousel from "./carousel.js";
 
 const carousel = new SwipeCarousel({
   containerID: '.slider',
