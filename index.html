@@ -7,23 +7,60 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="libs/@fortawesome/fontawesome-free/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
-  <title>Document</title>
+  <title>PhotographerED</title>
 </head>
 
 <body>
-  <div id="carousel" class="carousel slider">
-    <ul id="slides-container" class="slides">
-      <li class="slide item active">Slide 1</li>
-      <li class="slide item">Slide 2</li>
-      <li class="slide item">Slide 3</li>
-      <li class="slide item">Slide 4</li>
-      <li class="slide item">Slide 5</li>
-    </ul>
 
-  </div>
+  <header class="header">
+    <div class="header-menu">
 
+      <div class="header-menu__container">
+
+        <div class="header-logo">
+          <span>Елизавета <br> Фотограф</span>
+        </div>
+
+        <div class="header-navbar">
+          <ul class="header-navbar__list">
+            <li class="header-navbar__item">
+              <a class="header-navbar__link" href="">Портфолио</a>
+            </li>
+            <li class="header-navbar__item">
+              <a class="header-navbar__link" href="">Контакты</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+  </header>
+
+  <section class="main">
+
+    <div id="carousel" class="carousel slider">
+
+      <div id="slides-container" class="slides">
+        <div class="slide item active" style="background-image: url(img/photo1.jpg)"></div>
+        <div class="slide item" style="background-image: url(img/photo2.jpg)"></div>
+        <div class="slide item" style="background-image: url(img/photo3.jpg)"></div>
+        <div class="slide item" style="background-image: url(img/photo4.jpg)"></div>
+        <div class="slide item" style="background-image: url(img/photo5.jpg)"></div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <footer class="footer">
+    <p class="footer-message">Если Вы хотите посотрудничать и оставить чудесные воспоминания о вашем праздничном дне, звоните: <a class="footer-link"
+        href="tel:+380000000000">&#128241; +38-000-001-00-01</a> или пишите в
+      <a class="footer-link" href="">&#9993; Instagram</a></p>
+  </footer>
 
   <script src="js/index.js" type="module"></script>
+
 </body>
 
 </html>
