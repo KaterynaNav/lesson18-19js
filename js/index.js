@@ -1,4 +1,3 @@
-import Carousel from "./carousel.js";
 import SwipeCarousel from "./carousel-swipe.js";
 
 const carousel = new SwipeCarousel({
