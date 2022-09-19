@@ -56,7 +56,7 @@ class Carousel {
         "class",
         i !== 0 ? "indicator" : "indicator active"
       );
-      indicator.dataset.slideTo = "${i}";
+      indicator.dataset.slideTo = `${i}`;
 
       indicators.append(indicator);
     }
@@ -117,7 +117,7 @@ class Carousel {
     const target = e.target;
     if (target && target.classList.contains("indicator")) {
       const dataSlide = +target.dataset.slideTo;
-      if (isNaN(dataSlide)) return;
+      // if (isNaN(dataSlide)) return;
       this._pause;
       this._gotoNth(dataSlide);
     }
