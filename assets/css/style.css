@@ -326,6 +326,7 @@ body {
   background-color: bisque;
   margin: 0;
   font-family: "Arial", "Helvetica", sans-serif;
+  min-width: 500px;
 }
 
 .header {
@@ -353,6 +354,7 @@ body {
   font-weight: bold;
   color: chocolate;
   margin-top: 15px;
+  margin-left: 30px;
   font-style: italic;
 }
 
@@ -387,8 +389,6 @@ body {
 
 .slides {
   position: relative;
-  height: 600px;
-  width: 70%;
   padding: 0px;
   margin-left: auto;
   margin-right: auto;
@@ -403,12 +403,7 @@ body {
   left: 0px;
   top: 0px;
   width: 100%;
-  height: 600px;
-  opacity: 0;
-  z-index: -999;
-  -webkit-transition: opacity 0.25s;
-  -o-transition: opacity 0.25s;
-  transition: opacity 0.25s;
+  height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -455,7 +450,7 @@ body {
 
 .footer {
   min-height: 100px;
-  padding: 20px 0;
+  padding: 10px 0;
 }
 
 .footer-message {
